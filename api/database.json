@@ -1,13 +1,48 @@
 {
-    "plumbers": [],
-    "completions": [],
-    "requests": [
-        {
-            "id": 1,
-            "description": "Aut sint voluptatem fugit eius quas molestiae modi.",
-            "address": "34445 Bianka Ports",
-            "budget": 400,
-            "neededBy": "2021-08-27"
-        }
-    ]
+  "plumbers": [],
+  "completions": [],
+  "requests": [
+    {
+      "id": 2,
+      "description": "Water main broken",
+      "address": "Alaskan Pipe Line",
+      "budget": 9999,
+      "neededBy": "2022-12-27"
+    },
+    {
+      "id": 3,
+      "description": "Unstop my toilet.",
+      "address": "2510 Reeves",
+      "budget": 50,
+      "neededBy": "2022-12-25"
+    },
+    {
+      "description": "toilet plugged",
+      "address": "311 BFE",
+      "budget": "2500",
+      "neededBy": "2022-12-17",
+      "id": 5
+    },
+    {
+      "description": "MY REFRIGERATOR IS RUNNING",
+      "address": "22222 ARE YOU GONNA GO MY WAY",
+      "budget": "5555",
+      "neededBy": "2022-12-24",
+      "id": 7
+    },
+    {
+      "description": "Polly Picked a Pepper",
+      "address": "34567",
+      "budget": "600",
+      "neededBy": "2022-12-16",
+      "id": 8
+    },
+    {
+      "description": "help",
+      "address": "help",
+      "budget": "245",
+      "neededBy": "2022-12-16",
+      "id": 9
+    }
+  ]
 }
