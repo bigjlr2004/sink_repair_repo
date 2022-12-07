@@ -1,21 +1,47 @@
 {
-  "plumbers": [],
-  "completions": [],
-  "requests": [
+  "plumbers": [
+    {
+      "id": 1,
+      "name": "Maude"
+    },
     {
       "id": 2,
-      "description": "Water main broken",
-      "address": "Alaskan Pipe Line",
-      "budget": 9999,
-      "neededBy": "2022-12-27"
+      "name": "Merle"
+    }
+  ],
+  "completions": [
+    {
+      "requestId": "undefined",
+      "plumberId": "1",
+      "date_created": 1670430992100,
+      "id": 1
     },
     {
-      "id": 3,
-      "description": "Unstop my toilet.",
-      "address": "2510 Reeves",
-      "budget": 50,
-      "neededBy": "2022-12-25"
+      "requestId": "undefined",
+      "plumberId": "1",
+      "date_created": 1670430997248,
+      "id": 2
     },
+    {
+      "requestId": "undefined",
+      "plumberId": "1",
+      "date_created": 1670431048715,
+      "id": 3
+    },
+    {
+      "requestId": "11",
+      "plumberId": "1",
+      "date_created": 1670431549099,
+      "id": 4
+    },
+    {
+      "requestId": "11",
+      "plumberId": "1",
+      "date_created": 1670432089551,
+      "id": 5
+    }
+  ],
+  "requests": [
     {
       "description": "toilet plugged",
       "address": "311 BFE",
@@ -31,18 +57,32 @@
       "id": 7
     },
     {
-      "description": "Polly Picked a Pepper",
-      "address": "34567",
-      "budget": "600",
-      "neededBy": "2022-12-16",
-      "id": 8
+      "description": "Need new service Installed",
+      "address": "Fort Worth TExas",
+      "budget": "2500",
+      "neededBy": "2022-12-31",
+      "id": 10
     },
     {
-      "description": "help",
-      "address": "help",
-      "budget": "245",
-      "neededBy": "2022-12-16",
-      "id": 9
+      "description": "Leaky Cauldron",
+      "address": "23456 Dyergunalley ",
+      "budget": "3500",
+      "neededBy": "2022-12-03",
+      "id": 11
+    },
+    {
+      "description": "Flaming Dr Pepper",
+      "address": "71 North Hwy 3",
+      "budget": "56789",
+      "neededBy": "2022-12-30",
+      "id": 12
+    },
+    {
+      "description": "Drafty Bathroom",
+      "address": "You Know Where",
+      "budget": "2500",
+      "neededBy": "2022-12-31",
+      "id": 13
     }
   ]
 }

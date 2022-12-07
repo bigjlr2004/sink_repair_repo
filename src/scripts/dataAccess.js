@@ -1,7 +1,8 @@
 import { mainContainer } from "./main.js"
 //requests stores the external data in the application state when it is fetched
 const applicationState = {
-    requests: {}
+    requests: {},
+    plumbers: {}
 
 }
 // this sets the location of my external data and saves that location to a variable named API
@@ -17,6 +18,26 @@ export const fetchRequests = () => {
             (serviceRequests) => {
                 // Store the external state in application state
                 applicationState.requests = serviceRequests
+            }
+        )
+}
+
+export const fetchPlumbers = () => {
+    return fetch(`${API}/plumbers`)
+        .then(response => response.json())
+        .then(
+            (data) => {
+                applicationState.plumbers = data
+            }
+        )
+}
+
+export const fetchCompletions = () => {
+    return fetch(`${API}/completions`)
+        .then(response => response.json())
+        .then(
+            (data) => {
+                applicationState.completions = data
             }
         )
 }
@@ -49,6 +70,23 @@ export const deleteRequest = (id) => {
 }
 
 
+export const saveCompletion = (completionRequest) => {
+    const fetchOptions = {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(completionRequest)
+    }
+
+
+    return fetch(`${API}/completions`, fetchOptions)
+        .then(response => response.json())
+        .then(() => {
+            mainContainer.dispatchEvent(new CustomEvent("stateChanged"))
+
+        })
+}
 
 
 
@@ -59,5 +97,10 @@ export const getRequests = () => {
     return applicationState.requests.map(request => ({...request}))
 
 }
+export const getPlumbers = () => {
+    return applicationState.plumbers.map(plumber => ({...plumber}))
+
+}
+
 
 
